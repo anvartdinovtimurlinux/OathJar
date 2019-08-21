@@ -16,6 +16,10 @@
   outline: none;
 }
 
+body {
+  min-width: 1200px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -25,11 +29,11 @@
 
 .wrapper {
   box-sizing: border-box;
-  width: 1600px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 215px;
-  padding-left: 215px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .header {
@@ -46,7 +50,7 @@
   width: 850px;
   height: 790px;
   top: 100px;
-  right: 0;
+  right: -200px;
 
   background-image: url("../img/header.png");
   background-repeat: no-repeat;
@@ -239,6 +243,10 @@
   border-radius: 15px;
   box-shadow: 0px 8px 35px 0px rgba(25, 40, 66, 0.1);
 }
+
+/* .promise-comment:focus {
+  background-color: #ffffff;
+} */
 
 .promise-comment::placeholder {
   font-size: 14px;
