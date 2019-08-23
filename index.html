@@ -21,10 +21,10 @@
           <img class="logo-img" src="img/logo.png" alt="Логотип OathJar" width="162" height="41">
         </div>
 
-        <p class="promise-counter">
+        <div class="promise-counter">
           <span class="promise-counter-number">31,122 +</span>
           <span class="promise-counter-text">promises</span>
-        </p>
+        </div>
       </div>
 
       <p class="header-motto">
@@ -34,9 +34,17 @@
 
       <form action="post" class="invitation-form">
         <div class="from-to">
-          <input class="your-name" type="text" placeholder="Your name">
-          <label for="partner-email">to</label>
-          <input class="partner-email" id="partner-email" type="email" placeholder="Partner Email">
+          <div class="field">
+            <input class="your-name" id="your-name" type="text" placeholder="Your name" required>
+            <label for="your-name" class="text-cloud">Your name</label>
+          </div>
+
+          <span>to</span>
+
+          <div class="field">
+            <input class="partner-email" id="partner-email" type="email" placeholder="Partner Email" required>
+            <label for="partner-email" class="text-cloud">Your partner Email</label>
+          </div>
         </div>
 
         <textarea class="promise-comment" name="" id="" rows="5" placeholder="Any comments to your significant other?
